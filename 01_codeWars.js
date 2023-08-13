@@ -1,5 +1,6 @@
 function capitalizeJadenStyle(el) {
-    return el.split(' ')
+    return el
+        .split(' ')
         .map((word) => {
             if (word.length > 0) {
                 const firstLetter = word[0].toUpperCase();
@@ -14,5 +15,3 @@ function capitalizeJadenStyle(el) {
 const originalQuote = "how can mirrors be real if our eyes aren't real";
 const jadenStyleQuote = capitalizeJadenStyle(originalQuote);
 console.log(jadenStyleQuote);
-
-
